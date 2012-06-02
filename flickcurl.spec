@@ -2,16 +2,16 @@
 Summary:	Flickcurl is a C library for the Flickr API
 Summary(pl.UTF-8):	Flickcurl is a C library for the Flickr API
 Name:		flickcurl
-Version:	1.21
+Version:	1.22
 Release:	1
-License:	GPLv2
-Group:		Administration/System
-Source0:	http://download.dajobe.org/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	d4d364231505dc22a6af42be7bc85edf
+License:	GPL v2
+Group:		Libraries
+Source0:	http://download.dajobe.org/flickcurl/%{name}-%{version}.tar.gz
+# Source0-md5:	33106156f9a9e538b5787f92db717f5d
 URL:		http://dajobe.org
 BuildRequires:	curl-devel
-BuildRequires:	libxml2-devel
 BuildRequires:	libraptor-devel
+BuildRequires:	libxml2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,8 +25,8 @@ Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
-This package contains the include files used to develop using Flickcurl
-APIs.
+This package contains the include files used to develop using
+Flickcurl APIs.
 
 %description devel -l pl.UTF-8
 Ten pakiet zawiera pliki nagłówkow służące do programowania z użyciem
@@ -47,7 +47,7 @@ Ten pakiet zawiera statyczne biblioteki Flickcurl.
 %package tools
 Summary:	The Flickcurl utility tools
 Summary(pl.UTF-8):	Programy narzędziowe do biblioteki Flickcurl
-Group:		Network/Utilities
+Group:		Libraries
 
 %description tools
 This package contains the Flickcurl utility tools.
