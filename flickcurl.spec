@@ -60,9 +60,7 @@ Ten pakiet zawiera statyczne biblioteki Flickcurl.
 Summary:	API documentation for Flickcurl library
 Summary(pl.UTF-8):	Dokumentacja API biblioteki Flickcurl
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API documentation for Flickcurl library.
