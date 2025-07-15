@@ -2,7 +2,7 @@ Summary:	Flickcurl - C library for the Flickr API
 Summary(pl.UTF-8):	Flickcurl - biblioteka C do API serwisu Flickr
 Name:		flickcurl
 Version:	1.26
-Release:	4
+Release:	5
 License:	LGPL v2.1+ or GPL v2+ or Apache v2.0
 Group:		Libraries
 Source0:	http://download.dajobe.org/flickcurl/%{name}-%{version}.tar.gz
