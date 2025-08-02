@@ -1,0 +1,759 @@
+diff -ur flickcurl-1.26.org/src/activity-api.c flickcurl-1.26/src/activity-api.c
+--- flickcurl-1.26.org/src/activity-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/activity-api.c	2025-08-02 22:20:07.635309738 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/activity.c flickcurl-1.26/src/activity.c
+--- flickcurl-1.26.org/src/activity.c	2014-06-01 01:16:49.000000000 +0200
++++ flickcurl-1.26/src/activity.c	2025-08-02 22:20:07.635309738 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/args.c flickcurl-1.26/src/args.c
+--- flickcurl-1.26.org/src/args.c	2012-08-29 05:42:02.000000000 +0200
++++ flickcurl-1.26/src/args.c	2025-08-02 22:20:07.635309738 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/auth-api.c flickcurl-1.26/src/auth-api.c
+--- flickcurl-1.26.org/src/auth-api.c	2014-06-01 01:16:49.000000000 +0200
++++ flickcurl-1.26/src/auth-api.c	2025-08-02 22:20:07.635309738 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/blog.c flickcurl-1.26/src/blog.c
+--- flickcurl-1.26.org/src/blog.c	2012-08-29 04:58:29.000000000 +0200
++++ flickcurl-1.26/src/blog.c	2025-08-02 22:20:07.638643091 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/blogs-api.c flickcurl-1.26/src/blogs-api.c
+--- flickcurl-1.26.org/src/blogs-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/blogs-api.c	2025-08-02 22:20:07.638643091 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/category.c flickcurl-1.26/src/category.c
+--- flickcurl-1.26.org/src/category.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/category.c	2025-08-02 22:20:07.638643091 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/collection.c flickcurl-1.26/src/collection.c
+--- flickcurl-1.26.org/src/collection.c	2014-06-01 01:16:49.000000000 +0200
++++ flickcurl-1.26/src/collection.c	2025-08-02 22:20:07.638643091 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/collections-api.c flickcurl-1.26/src/collections-api.c
+--- flickcurl-1.26.org/src/collections-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/collections-api.c	2025-08-02 22:20:07.638643091 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/comments.c flickcurl-1.26/src/comments.c
+--- flickcurl-1.26.org/src/comments.c	2012-08-29 04:58:29.000000000 +0200
++++ flickcurl-1.26/src/comments.c	2025-08-02 22:20:07.638643091 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/common.c flickcurl-1.26/src/common.c
+--- flickcurl-1.26.org/src/common.c	2014-06-01 20:02:58.000000000 +0200
++++ flickcurl-1.26/src/common.c	2025-08-02 22:20:07.638643091 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/commons-api.c flickcurl-1.26/src/commons-api.c
+--- flickcurl-1.26.org/src/commons-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/commons-api.c	2025-08-02 22:20:07.638643091 +0200
+@@ -24,6 +24,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/contacts-api.c flickcurl-1.26/src/contacts-api.c
+--- flickcurl-1.26.org/src/contacts-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/contacts-api.c	2025-08-02 22:20:07.638643091 +0200
+@@ -23,6 +23,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/contacts.c flickcurl-1.26/src/contacts.c
+--- flickcurl-1.26.org/src/contacts.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/contacts.c	2025-08-02 22:20:07.638643091 +0200
+@@ -24,6 +24,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/context.c flickcurl-1.26/src/context.c
+--- flickcurl-1.26.org/src/context.c	2012-08-29 04:58:29.000000000 +0200
++++ flickcurl-1.26/src/context.c	2025-08-02 22:20:07.638643091 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/exif.c flickcurl-1.26/src/exif.c
+--- flickcurl-1.26.org/src/exif.c	2012-08-29 04:58:29.000000000 +0200
++++ flickcurl-1.26/src/exif.c	2025-08-02 22:20:07.638643091 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/favorites-api.c flickcurl-1.26/src/favorites-api.c
+--- flickcurl-1.26.org/src/favorites-api.c	2013-06-17 19:42:59.000000000 +0200
++++ flickcurl-1.26/src/favorites-api.c	2025-08-02 22:20:07.638643091 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/galleries-api.c flickcurl-1.26/src/galleries-api.c
+--- flickcurl-1.26.org/src/galleries-api.c	2014-05-31 23:58:56.000000000 +0200
++++ flickcurl-1.26/src/galleries-api.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/gallery.c flickcurl-1.26/src/gallery.c
+--- flickcurl-1.26.org/src/gallery.c	2012-08-29 07:15:21.000000000 +0200
++++ flickcurl-1.26/src/gallery.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/group.c flickcurl-1.26/src/group.c
+--- flickcurl-1.26.org/src/group.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/group.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/groups-api.c flickcurl-1.26/src/groups-api.c
+--- flickcurl-1.26.org/src/groups-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/groups-api.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/groups-members-api.c flickcurl-1.26/src/groups-members-api.c
+--- flickcurl-1.26.org/src/groups-members-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/groups-members-api.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/groups-pools-api.c flickcurl-1.26/src/groups-pools-api.c
+--- flickcurl-1.26.org/src/groups-pools-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/groups-pools-api.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/institution.c flickcurl-1.26/src/institution.c
+--- flickcurl-1.26.org/src/institution.c	2014-06-01 20:02:58.000000000 +0200
++++ flickcurl-1.26/src/institution.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/interestingness-api.c flickcurl-1.26/src/interestingness-api.c
+--- flickcurl-1.26.org/src/interestingness-api.c	2013-06-17 19:42:59.000000000 +0200
++++ flickcurl-1.26/src/interestingness-api.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/legacy-auth.c flickcurl-1.26/src/legacy-auth.c
+--- flickcurl-1.26.org/src/legacy-auth.c	2013-06-17 19:42:59.000000000 +0200
++++ flickcurl-1.26/src/legacy-auth.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/location.c flickcurl-1.26/src/location.c
+--- flickcurl-1.26.org/src/location.c	2014-06-01 20:02:58.000000000 +0200
++++ flickcurl-1.26/src/location.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/machinetags-api.c flickcurl-1.26/src/machinetags-api.c
+--- flickcurl-1.26.org/src/machinetags-api.c	2014-05-31 23:58:56.000000000 +0200
++++ flickcurl-1.26/src/machinetags-api.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/machinetags.c flickcurl-1.26/src/machinetags.c
+--- flickcurl-1.26.org/src/machinetags.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/machinetags.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/md5.c flickcurl-1.26/src/md5.c
+--- flickcurl-1.26.org/src/md5.c	2013-04-09 07:02:49.000000000 +0200
++++ flickcurl-1.26/src/md5.c	2025-08-02 22:20:07.641976445 +0200
+@@ -41,6 +41,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/members.c flickcurl-1.26/src/members.c
+--- flickcurl-1.26.org/src/members.c	2012-08-29 04:58:29.000000000 +0200
++++ flickcurl-1.26/src/members.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/method.c flickcurl-1.26/src/method.c
+--- flickcurl-1.26.org/src/method.c	2014-06-01 20:02:58.000000000 +0200
++++ flickcurl-1.26/src/method.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/note.c flickcurl-1.26/src/note.c
+--- flickcurl-1.26.org/src/note.c	2012-08-29 04:58:29.000000000 +0200
++++ flickcurl-1.26/src/note.c	2025-08-02 22:20:07.641976445 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/oauth.c flickcurl-1.26/src/oauth.c
+--- flickcurl-1.26.org/src/oauth.c	2014-06-01 20:02:58.000000000 +0200
++++ flickcurl-1.26/src/oauth.c	2025-08-02 22:20:07.645309798 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/panda-api.c flickcurl-1.26/src/panda-api.c
+--- flickcurl-1.26.org/src/panda-api.c	2014-05-31 22:07:20.000000000 +0200
++++ flickcurl-1.26/src/panda-api.c	2025-08-02 22:20:07.645309798 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/people-api.c flickcurl-1.26/src/people-api.c
+--- flickcurl-1.26.org/src/people-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/people-api.c	2025-08-02 22:20:07.645309798 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/perms.c flickcurl-1.26/src/perms.c
+--- flickcurl-1.26.org/src/perms.c	2014-06-01 20:02:58.000000000 +0200
++++ flickcurl-1.26/src/perms.c	2025-08-02 22:20:07.645309798 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/person.c flickcurl-1.26/src/person.c
+--- flickcurl-1.26.org/src/person.c	2014-06-01 20:02:58.000000000 +0200
++++ flickcurl-1.26/src/person.c	2025-08-02 22:20:07.645309798 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photo.c flickcurl-1.26/src/photo.c
+--- flickcurl-1.26.org/src/photo.c	2014-06-01 20:02:58.000000000 +0200
++++ flickcurl-1.26/src/photo.c	2025-08-02 22:20:07.645309798 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ #include <ctype.h>
+ 
+ #ifdef HAVE_CONFIG_H
+diff -ur flickcurl-1.26.org/src/photos-api.c flickcurl-1.26/src/photos-api.c
+--- flickcurl-1.26.org/src/photos-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/photos-api.c	2025-08-02 22:20:07.645309798 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photos-comments-api.c flickcurl-1.26/src/photos-comments-api.c
+--- flickcurl-1.26.org/src/photos-comments-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/photos-comments-api.c	2025-08-02 22:20:07.645309798 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photoset.c flickcurl-1.26/src/photoset.c
+--- flickcurl-1.26.org/src/photoset.c	2012-08-29 04:58:29.000000000 +0200
++++ flickcurl-1.26/src/photoset.c	2025-08-02 22:20:07.645309798 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photosets-api.c flickcurl-1.26/src/photosets-api.c
+--- flickcurl-1.26.org/src/photosets-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/photosets-api.c	2025-08-02 22:20:07.645309798 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photosets-comments-api.c flickcurl-1.26/src/photosets-comments-api.c
+--- flickcurl-1.26.org/src/photosets-comments-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/photosets-comments-api.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photos-geo-api.c flickcurl-1.26/src/photos-geo-api.c
+--- flickcurl-1.26.org/src/photos-geo-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/photos-geo-api.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photos-licenses-api.c flickcurl-1.26/src/photos-licenses-api.c
+--- flickcurl-1.26.org/src/photos-licenses-api.c	2013-06-17 19:42:59.000000000 +0200
++++ flickcurl-1.26/src/photos-licenses-api.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photos-notes-api.c flickcurl-1.26/src/photos-notes-api.c
+--- flickcurl-1.26.org/src/photos-notes-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/photos-notes-api.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photos-people-api.c flickcurl-1.26/src/photos-people-api.c
+--- flickcurl-1.26.org/src/photos-people-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/photos-people-api.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photos-transform-api.c flickcurl-1.26/src/photos-transform-api.c
+--- flickcurl-1.26.org/src/photos-transform-api.c	2013-06-17 19:42:59.000000000 +0200
++++ flickcurl-1.26/src/photos-transform-api.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/photos-upload-api.c flickcurl-1.26/src/photos-upload-api.c
+--- flickcurl-1.26.org/src/photos-upload-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/photos-upload-api.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/place.c flickcurl-1.26/src/place.c
+--- flickcurl-1.26.org/src/place.c	2014-06-01 20:02:58.000000000 +0200
++++ flickcurl-1.26/src/place.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/places-api.c flickcurl-1.26/src/places-api.c
+--- flickcurl-1.26.org/src/places-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/places-api.c	2025-08-02 22:20:07.648643153 +0200
+@@ -24,6 +24,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/prefs-api.c flickcurl-1.26/src/prefs-api.c
+--- flickcurl-1.26.org/src/prefs-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/prefs-api.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/reflection-api.c flickcurl-1.26/src/reflection-api.c
+--- flickcurl-1.26.org/src/reflection-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/reflection-api.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/serializer.c flickcurl-1.26/src/serializer.c
+--- flickcurl-1.26.org/src/serializer.c	2014-06-01 01:16:49.000000000 +0200
++++ flickcurl-1.26/src/serializer.c	2025-08-02 22:20:07.648643153 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/sha1.c flickcurl-1.26/src/sha1.c
+--- flickcurl-1.26.org/src/sha1.c	2013-04-11 06:52:16.000000000 +0200
++++ flickcurl-1.26/src/sha1.c	2025-08-02 22:20:07.648643153 +0200
+@@ -91,6 +91,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ #include <stdint.h>
+ 
+ #include <flickcurl.h>
+diff -ur flickcurl-1.26.org/src/shape.c flickcurl-1.26/src/shape.c
+--- flickcurl-1.26.org/src/shape.c	2014-06-01 20:02:58.000000000 +0200
++++ flickcurl-1.26/src/shape.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/size.c flickcurl-1.26/src/size.c
+--- flickcurl-1.26.org/src/size.c	2012-08-29 04:58:29.000000000 +0200
++++ flickcurl-1.26/src/size.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/stat.c flickcurl-1.26/src/stat.c
+--- flickcurl-1.26.org/src/stat.c	2012-08-29 04:58:29.000000000 +0200
++++ flickcurl-1.26/src/stat.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/stats-api.c flickcurl-1.26/src/stats-api.c
+--- flickcurl-1.26.org/src/stats-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/stats-api.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/tags-api.c flickcurl-1.26/src/tags-api.c
+--- flickcurl-1.26.org/src/tags-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/tags-api.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/tags.c flickcurl-1.26/src/tags.c
+--- flickcurl-1.26.org/src/tags.c	2013-01-17 01:14:48.000000000 +0100
++++ flickcurl-1.26/src/tags.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/test-api.c flickcurl-1.26/src/test-api.c
+--- flickcurl-1.26.org/src/test-api.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/test-api.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/ticket.c flickcurl-1.26/src/ticket.c
+--- flickcurl-1.26.org/src/ticket.c	2012-08-29 04:58:29.000000000 +0200
++++ flickcurl-1.26/src/ticket.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/upload-api.c flickcurl-1.26/src/upload-api.c
+--- flickcurl-1.26.org/src/upload-api.c	2013-06-17 19:42:59.000000000 +0200
++++ flickcurl-1.26/src/upload-api.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/urls-api.c flickcurl-1.26/src/urls-api.c
+--- flickcurl-1.26.org/src/urls-api.c	2012-08-27 17:43:44.000000000 +0200
++++ flickcurl-1.26/src/urls-api.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/user_upload_status.c flickcurl-1.26/src/user_upload_status.c
+--- flickcurl-1.26.org/src/user_upload_status.c	2014-05-31 21:54:54.000000000 +0200
++++ flickcurl-1.26/src/user_upload_status.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/video.c flickcurl-1.26/src/video.c
+--- flickcurl-1.26.org/src/video.c	2009-12-21 04:24:14.000000000 +0100
++++ flickcurl-1.26/src/video.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+diff -ur flickcurl-1.26.org/src/vsnprintf.c flickcurl-1.26/src/vsnprintf.c
+--- flickcurl-1.26.org/src/vsnprintf.c	2010-05-04 20:07:45.000000000 +0200
++++ flickcurl-1.26/src/vsnprintf.c	2025-08-02 22:20:07.651976506 +0200
+@@ -21,6 +21,7 @@
+ 
+ #include <stdio.h>
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
